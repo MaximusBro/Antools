@@ -1,0 +1,111 @@
+.popular
+	margin-top: 200px
+	.wrapper
+		max-width: 1250px
+	&__title
+		margin: 0 auto
+		margin-bottom: 90px
+		h2
+			font-family: $main__font
+			font-style: normal
+			font-weight: 500
+			font-size: 48px
+			line-height: 130%
+			text-align: center
+			color: rgba(255, 255, 255, 0.9)
+		p
+			font-family: $main__font
+			font-style: normal
+			font-weight: 500
+			font-size: 18px
+			line-height: 30px
+			text-align: center
+			color: rgba(255, 255, 255, 0.55)
+	&__column
+		display: flex
+		flex-wrap: wrap
+		column-gap: 25px
+	&-card
+		background: #1E252B
+		border-radius: 15px
+		max-width: 392px
+		min-height: 294px
+		margin-bottom: 120px
+		&__title
+			max-width: 100%
+			display: flex
+			margin-bottom: 30px
+		&__logo
+			margin-left: 30px
+			h3
+				font-family: $main__font
+				font-style: normal
+				font-weight: 500
+				font-size: 24px
+				line-height: 36px
+				color: rgba(255, 255, 255, 0.78)
+			p
+				max-width: 110px
+				font-family: $main__font
+				font-style: normal
+				font-weight: 400
+				font-size: 18px
+				line-height: 27px
+				color: rgba(255, 165, 55, 0.55)
+		&__subtitle
+			p
+				font-family: $main__font
+				font-style: normal
+				font-weight: 400
+				font-size: 16px
+				line-height: 30px
+				color: rgba(255, 255, 255, 0.55)
+		&__footer
+			margin-top: 40px
+			display: flex
+			justify-content: space-between
+			ul
+				display: flex
+				column-gap: 30px
+			button
+				min-width: 106px
+				min-height: 42px
+				font-family: $main__font
+				font-style: normal
+				font-weight: 600
+				font-size: 16px
+				line-height: 24px
+				background: none
+				border: none
+				color: rgba(255, 255, 255, 0.55)
+				border-radius: 8px
+		&__wrapper
+			padding: 30px
+	&-card:hover
+		transition: 0.5s all
+		transform: translate(0px, -5%)
+		&__wrapper:hover
+			background: rgba(6, 139, 240, 0.6)
+			backdrop-filter: blur(50px)
+		button
+			transition: 0.5s all
+			background: #FF6E30
+	&__more
+		max-width: 184px
+		margin: 0 auto
+		margin-top: 100px
+		button
+			min-width: 184px
+			min-height: 64px
+			background: #1E252B
+			border: 1px solid rgba(255, 255, 255, 0.1)
+			border-radius: 8px
+			font-family: $main__font
+			font-style: normal
+			font-weight: 500
+			font-size: 20px
+			line-height: 30px
+			color: #FF6E30
+		button:hover
+			transition: 0.5s all
+			background: rgba(255, 110, 48, 0.3)

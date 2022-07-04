@@ -1,0 +1,57 @@
+$main__font: 'Poppins'
+$secondary__font: 'Roboto'
+/* poppins-regular - latin */
+@font-face
+	font-family: 'Poppins'
+	font-style: normal
+	font-weight: 400
+	src: local(''),
+	url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'), 
+	url('../fonts/poppins-v20-latin-regular.woff') format('woff')
+/* poppins-500 - latin */
+@font-face
+	font-family: 'Poppins'
+	font-style: normal
+	font-weight: 500
+	src: local(''),
+	url('../fonts/poppins-v20-latin-500.woff2') format('woff2'),
+	url('../fonts/poppins-v20-latin-500.woff') format('woff')
+/* roboto-regular - latin */
+@font-face
+	font-family: 'Roboto'
+	font-style: normal
+	font-weight: 400
+	src: local(''),
+	url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+	url('../fonts/roboto-v30-latin-regular.woff') format('woff')
+/* poppins-600 - latin */
+@font-face
+	font-family: 'Poppins'
+	font-style: normal
+	font-weight: 600
+	src: local(''),
+	url('../fonts/poppins-v20-latin-600.woff2') format('woff2'), 
+	url('../fonts/poppins-v20-latin-600.woff') format('woff')
+
+html
+	box-sizing: border-box
+*,
+*::before,
+*::after
+	box-sizing: inherit
+body
+	background: #1E252B
+a
+	text-decoration: none
+	color: #fff
+.wrapper
+	max-width: 1224px
+	margin: 0 auto
+@import "_header.sass"
+@import "_intro.sass"
+@import "_popular.sass"
+@import "_brand.sass"
+@import "_tools.sass"
+@import "_comments.sass"
+@import "_contributor.sass"
+@import "_footer.sass"
