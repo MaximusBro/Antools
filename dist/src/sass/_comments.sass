@@ -7,8 +7,41 @@
 			display: flex
 			align-items: center
 		&__logo
+			padding: px
 			max-width: 400px
+			position: relative
+			top: 0
+			background: url("../img/png/circle.png") no-repeat center
+		&__author
+			padding: 10px 25px
+			background: rgba(40, 48, 54, 0.2)
+			backdrop-filter: blur(50px)
+			border-radius: 8px
+			position: absolute
+			right: 5%
+			bottom: 10%
+			min-width: 265px
+			min-height: 91px
+
+			h3
+				font-family: $main__font
+				font-style: normal
+				font-weight: 500
+				font-size: 26px
+				line-height: 39px
+				letter-spacing: 0.015em
+				color: rgba(255, 253, 253, 0.78)
+			p
+
+				font-family: $main__font
+				font-style: normal
+				font-weight: 400
+				font-size: 16px
+				line-height: 24px
+				color: rgba(255, 253, 253, 0.55)
 		&__description
+			margin-left: 40px
+			position: relative
 			max-width: 393px
 			font-family: $secondary__font
 			font-style: normal
@@ -17,3 +50,21 @@
 			line-height: 30px
 			letter-spacing: 0.015em
 			color: rgba(255, 255, 255, 0.78)
+			img
+				max-width: 105px
+				position: absolute
+				top: -29%
+				left: -10%
+		.arrow
+			button
+				border: none
+				background: none
+			span
+				border: solid #FF6E30
+				border-width: 0 3px 3px 0
+				display: inline-block
+				padding: 6px
+		.right
+			transform: rotate(-45deg)
+		.left
+			transform: rotate(135deg)
