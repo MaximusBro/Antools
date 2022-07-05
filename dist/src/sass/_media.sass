@@ -1,0 +1,116 @@
+@media (max-width:1110px)
+	.wrapper
+		max-width: 1110px
+		margin: 0 auto
+	.brand
+		&-slider
+			display: flex
+			flex-wrap: wrap
+@media (max-width:1024px)
+	.intro
+		&__text
+			display: block
+			margin: 0 auto
+			&-icons
+				align-items: center
+		&__img
+			display: none
+
+@media (max-width:792px)
+	h1
+		font-size: 7px
+	h2
+		font-size: 7px
+	.wrapper
+		max-width: 700px
+	/*HEADER START*/
+	.header
+		&__connect
+			display: none
+		&__logo
+			margin: 0 auto
+		.hamburger
+			display: block
+			position: absolute
+			right: 20px
+			top: 50px
+			transform: translateY(-50%)
+			width: 20px
+			height: 12px
+			span
+				display: block
+				height: 2px
+				width: 100%
+				background-color: #fff
+				margin-bottom: 2px
+				transition: 0.5s all
+			&__active
+				span
+					margin-bottom: -2px
+					&:nth-child(1)
+						transform: translateY(3px) rotate(-45deg)
+					&:nth-child(2)
+						display: none
+					&:nth-child(3)
+						transform: translateY(3px) rotate(45deg)
+		&-nav
+			z-index: 10
+			position: fixed
+			top: 0%
+			left: -100%
+			width: 55%
+			height: 100vh
+			padding: 20px 15px
+			background: rgba(165, 69, 29, 0.85)
+			transition: 0.6s all
+
+			&__active
+				left: 0
+			&__list
+				flex-direction: column
+
+	/*INTRO START*/
+	.intro
+		&__text
+			form
+				input
+					margin-bottom: 10px
+					min-width: 300px
+				button
+
+					position: static
+	/*POPULAR START*/
+	.popular
+		&-card
+			margin: 0 auto
+			max-width: 250px
+	.tools
+		&__intro
+			margin: 0 auto
+			button
+				margin-left: 25%
+		.popular-card
+			margin-top: 10px
+			max-width: 250px
+	.brand
+		&-slider
+			&__img
+				margin-bottom: 30px
+	/*COMMENTS START*/
+	.comments
+		display: none
+	/*CONTRIBUTOR START*/
+	.contributor
+		.wrapper
+			form
+				input
+					min-width: 320px
+					margin-bottom: 10px
+				button
+					margin-left: 25%
+					position: static
+	.footer
+		&__logo
+			margin: 0 auto
+		&__list
+			display: none

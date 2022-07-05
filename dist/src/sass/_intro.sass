@@ -14,7 +14,7 @@
 			color: rgba(255, 255, 255, 0.9)
 			margin-bottom: 30px
 			span
-				color: #FF6E30
+				color: $main__color
 		p
 			max-width: 487px
 			font-family: $main__font
@@ -25,9 +25,11 @@
 			color: rgba(255, 255, 255, 0.55)
 			margin-bottom: 60px
 		form
+			z-index: 1
 			display: block
 			position: relative
 			input
+
 				min-width: 500px
 				min-height: 64px
 				background: #283036
@@ -36,6 +38,7 @@
 			input::placeholder
 				padding-left: 20px
 			button
+
 				position: absolute
 				top: 15%
 				left: 59%
@@ -48,7 +51,7 @@
 				font-size: 16px
 				line-height: 24px
 				color: #FFFFFF
-				background: #FF6E30
+				background: $main__color
 				border-radius: 8px
 		&-icons
 			margin-top: 110px
@@ -57,6 +60,7 @@
 				flex-wrap: wrap
 				column-gap: 30px
 	&__img
+
 		position: absolute
 		right: 0
 		max-width: 589px
